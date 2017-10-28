@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HostChat"
+    android:weightSum="1"
+    android:background="@drawable/chatmain">
+    <RelativeLayout
+        android:id="@+id/rllayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/return_back"
+            android:id="@+id/button8" />
+        <TextView
+            android:textColor="#d5ecf1"
+            android:layout_centerInParent="true"
+            android:text="IP"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rlbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10.0dip"
+        >
+        <EditText
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText3"
+            android:layout_gravity="bottom" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/send_email"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/editText3"
+            android:id="@+id/button7" />
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/add_file"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@id/editText3"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollview1"
+        android:fillViewport="false"
+        android:layout_below="@id/rllayout"
+        android:layout_above="@id/rlbottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+
+            <TextView
+                android:textColor="#d5ecf1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/textView4"
+                android:layout_gravity="bottom"
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginRight="0dip"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectbg"
+    tools:context=".SelectChatModel">
+    <Space
+        android:id="@+id/space_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <TextView
+        android:id="@+id/ipname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="IPs"
+        android:textSize="20dp"
+        android:textColor="#0099cc"
+        android:layout_below="@+id/space_2"
+        />
+    <TextView
+        android:textColor="#0099cc"
+        android:id="@+id/phonename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="phonename"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/ipname"
+        />
+    <Space
+        android:layout_below="@+id/phonename"
+        android:id="@+id/space_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="8dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="8dp"
+        android:textColor="#0099cc"
+        android:textSize="50sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/space_1"
+        android:id="@+id/button5"
+        android:text="单   聊"
+        android:background="@drawable/upbutton"
+ />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/upbutton"
+        android:paddingBottom="8dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="8dp"
+        android:textColor="#0099cc"
+        android:textSize="50sp"
+        android:text="群   聊"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
+        />
+    <Button
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:id="@+id/back"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button6"
+        android:text="返回"
+        android:background="@drawable/upbutton"
+        android:paddingBottom="8dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="8dp"
+        android:textColor="#0099cc"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="1dp"
+        android:id="@+id/dogheadleft"
+        android:background="@drawable/dog_right"
+        android:layout_below="@+id/button6"
+        android:layout_toLeftOf="@+id/back"
+
+        />
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="0dp"
+        android:id="@+id/dogheadright"
+        android:background="@drawable/dog_left"
+        android:layout_below="@+id/button6"
+        android:layout_toRightOf="@+id/back"
+
+        />
+</RelativeLayout>

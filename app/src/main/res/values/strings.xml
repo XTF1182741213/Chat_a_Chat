@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">聊一会</string>
+    <string name="button">建房</string>
+    <string name="button2">参与</string>
+    <string name="button3">确定</string>
+    <string name="button4">返回</string>
+    <string name="button5">单   聊</string>
+    <string name="button6">群   聊</string>
+    <string name="button7"> </string>
+    <string name="button8"> </string>
+    <string name="button9">单   聊</string>
+    <string name="button10"> </string>
+    <string name="button11"> </string>
+    <string name="button12"> </string>
+    <string name="button13">已开启热点</string>
+    <string name="button14">群   聊</string>
+    <string name="button15"> </string>
+    <string name="button16"> </string>
+    <string name="button17"> </string>
+    <string name="button19"> </string>
+    <string name="button21">返回</string>
+    <string name="button22"> </string>
+    <string name="textView">SSID</string>
+    <string name="textView2">密码</string>
+    <string name="cheakBox">显示密码</string>
+</resources>

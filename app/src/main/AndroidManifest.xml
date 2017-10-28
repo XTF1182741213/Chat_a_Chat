@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pc.myapplication"
+    android:versionCode="1"
+    android:versionName="3.1300" >
+
+    <!-- 申请所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar">
+
+        <!-- 去除应用的标题栏 -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WlanCheak"
+            android:launchMode="singleInstance" />
+        <activity android:name=".SelectModel" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".SelectChatModel" />
+        <activity android:name=".HostChat" />
+        <activity android:name=".JoinChat" />
+        <activity android:name=".SelectWlan" />
+
+        <service
+            android:name=".UDPService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".TogHostChat" />
+        <activity android:name=".TogJoinChat" />
+        <activity android:name=".ChatRecord"></activity>
+    </application>
+
+</manifest>
